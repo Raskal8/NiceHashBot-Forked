@@ -129,7 +129,7 @@
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(78, 6);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            1000000,
+            int.MaxValue,
             0,
             0,
             0});
@@ -167,8 +167,9 @@
             this.Name = "FormSettings";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
+            this.TopMost = true;
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
